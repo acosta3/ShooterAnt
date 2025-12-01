@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ShooterAnt.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ShooterAnt.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ShooterAntEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ShooterAnt">
+      <UniqueIdentifier>{92AF276A-2D59-3AC3-9632-D17B8818E504}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ShooterAnt\ShooterAnt.Build.cs">
+      <Filter>Source\ShooterAnt</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ShooterAnt\ShooterAnt.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\ShooterAnt.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\ShooterAntCharacter.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\ShooterAntCharacter.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\ShooterAntGameMode.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\ShooterAntGameMode.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\ShooterAntPlayerController.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\ShooterAntPlayerController.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_Combat">
+      <UniqueIdentifier>{22B1F312-E0E1-3879-AD41-024066F885A2}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\CombatCharacter.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\CombatCharacter.h">
+      <Filter>Source\ShooterAnt\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\CombatGameMode.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\CombatGameMode.h">
+      <Filter>Source\ShooterAnt\Variant_Combat</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\CombatPlayerController.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\CombatPlayerController.h">
+      <Filter>Source\ShooterAnt\Variant_Combat</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_Combat\AI">
+      <UniqueIdentifier>{3A422565-0FAC-34CF-9B63-8E6B70651255}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\AI\CombatAIController.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\AI\CombatAIController.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\AI\CombatEnemy.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\AI\CombatEnemy.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\AI\CombatEnemySpawner.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\AI\CombatEnemySpawner.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\AI\CombatStateTreeUtility.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\AI\CombatStateTreeUtility.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\AI\EnvQueryContext_Player.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\AI\EnvQueryContext_Player.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_Combat\Animation">
+      <UniqueIdentifier>{03ED6C45-067C-3A62-9818-7A56DF6E95FA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Animation\AnimNotify_CheckChargedAttack.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Animation\AnimNotify_CheckCombo.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Animation\AnimNotify_CheckCombo.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Animation\AnimNotify_DoAttackTrace.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Animation\AnimNotify_DoAttackTrace.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_Combat\Gameplay">
+      <UniqueIdentifier>{52A84D86-6E2A-3ED5-AAC0-C7D167045840}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatActivationVolume.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatActivationVolume.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatCheckpointVolume.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatCheckpointVolume.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatDamageableBox.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatDamageableBox.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatDummy.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatDummy.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatLavaFloor.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Gameplay\CombatLavaFloor.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_Combat\Interfaces">
+      <UniqueIdentifier>{53A14B91-5184-38A0-A575-ACD9FD4E15F0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Interfaces\CombatActivatable.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Interfaces\CombatActivatable.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Interfaces\CombatAttacker.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Interfaces\CombatAttacker.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\Interfaces\CombatDamageable.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\Interfaces\CombatDamageable.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_Combat\UI">
+      <UniqueIdentifier>{B3C28779-B6B7-391A-9DAA-31308AD9326C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Combat\UI\CombatLifeBar.cpp">
+      <Filter>Source\ShooterAnt\Variant_Combat\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Combat\UI\CombatLifeBar.h">
+      <Filter>Source\ShooterAnt\Variant_Combat\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_Platforming">
+      <UniqueIdentifier>{075FEC4F-7024-3023-83F8-3E7707811B1B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Platforming\PlatformingCharacter.cpp">
+      <Filter>Source\ShooterAnt\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Platforming\PlatformingCharacter.h">
+      <Filter>Source\ShooterAnt\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Platforming\PlatformingGameMode.cpp">
+      <Filter>Source\ShooterAnt\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Platforming\PlatformingGameMode.h">
+      <Filter>Source\ShooterAnt\Variant_Platforming</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Platforming\PlatformingPlayerController.cpp">
+      <Filter>Source\ShooterAnt\Variant_Platforming</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Platforming\PlatformingPlayerController.h">
+      <Filter>Source\ShooterAnt\Variant_Platforming</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_Platforming\Animation">
+      <UniqueIdentifier>{74666B8D-85E6-312D-A0B3-A58681AC3B5C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_Platforming\Animation\AnimNotify_EndDash.cpp">
+      <Filter>Source\ShooterAnt\Variant_Platforming\Animation</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_Platforming\Animation\AnimNotify_EndDash.h">
+      <Filter>Source\ShooterAnt\Variant_Platforming\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_SideScrolling">
+      <UniqueIdentifier>{91E08F7E-624D-36BD-914F-5446D18304F9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\SideScrollingCameraManager.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\SideScrollingCameraManager.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\SideScrollingCharacter.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\SideScrollingCharacter.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\SideScrollingGameMode.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\SideScrollingGameMode.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\SideScrollingPlayerController.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\SideScrollingPlayerController.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_SideScrolling\AI">
+      <UniqueIdentifier>{27B117ED-196A-3C76-A4BE-717AF3852010}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\AI\SideScrollingAIController.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\AI\SideScrollingAIController.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\AI\SideScrollingNPC.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\AI\SideScrollingNPC.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\AI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\AI\SideScrollingStateTreeUtility.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\AI</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_SideScrolling\Gameplay">
+      <UniqueIdentifier>{228A0594-454C-3CBA-87F6-EDA63FDB3067}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Gameplay\SideScrollingJumpPad.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Gameplay\SideScrollingMovingPlatform.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Gameplay\SideScrollingPickup.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Gameplay\SideScrollingPickup.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Gameplay</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Gameplay\SideScrollingSoftPlatform.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_SideScrolling\Interfaces">
+      <UniqueIdentifier>{DB7C091F-D98C-36CC-A4EF-A3B2C25ABFA8}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Interfaces\SideScrollingInteractable.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Interfaces</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\Interfaces\SideScrollingInteractable.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\Interfaces</Filter>
+    </ClInclude>
+    <Filter Include="Source\ShooterAnt\Variant_SideScrolling\UI">
+      <UniqueIdentifier>{0D982831-5370-3219-B270-668AF438465F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\Variant_SideScrolling\UI\SideScrollingUI.cpp">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\Variant_SideScrolling\UI\SideScrollingUI.h">
+      <Filter>Source\ShooterAnt\Variant_SideScrolling\UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
