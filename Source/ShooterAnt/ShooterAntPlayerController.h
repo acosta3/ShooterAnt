@@ -51,4 +51,5 @@ protected:
 	UPROPERTY(VisibleAnywhere)
 	UHUDWidget* HUDWidget;
 
+	
 };

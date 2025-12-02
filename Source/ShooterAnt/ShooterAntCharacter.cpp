@@ -65,6 +65,9 @@ void AShooterAntCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AShooterAntCharacter::Look);
+
+		// Shooting
+		EnhancedInputComponent->BindAction(ShootAction, ETriggerEvent::Started, this, &AShooterAntCharacter::Shoot);
 	}
 	else
 	{
@@ -130,4 +133,10 @@ void AShooterAntCharacter::DoJumpEnd()
 {
 	// signal the character to stop jumping
 	StopJumping();
+}
+
+void AShooterAntCharacter::Shoot()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Pew Pew!"));
+
 }
