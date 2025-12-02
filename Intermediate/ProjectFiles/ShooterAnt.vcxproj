@@ -252,11 +252,18 @@
     <None Include="..\..\ShooterAnt.uproject"/>
     <None Include="..\..\Source\ShooterAnt.Target.cs"/>
     <None Include="..\..\Source\ShooterAntEditor.Target.cs"/>
+    <None Include="..\..\.gitattributes"/>
+    <None Include="..\..\.gitignore"/>
+    <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
+    <ClCompile Include="..\..\Source\ShooterAnt\HUDWidget.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\HUDWidget.h"/>
     <None Include="..\..\Source\ShooterAnt\ShooterAnt.Build.cs"/>
     <ClCompile Include="..\..\Source\ShooterAnt\ShooterAnt.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

@@ -11,6 +11,9 @@
     <None Include="..\..\Source\ShooterAntEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -32,6 +35,12 @@
     <Filter Include="Source\ShooterAnt">
       <UniqueIdentifier>{92AF276A-2D59-3AC3-9632-D17B8818E504}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\HUDWidget.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\HUDWidget.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
     <None Include="..\..\Source\ShooterAnt\ShooterAnt.Build.cs">
       <Filter>Source\ShooterAnt</Filter>
     </None>

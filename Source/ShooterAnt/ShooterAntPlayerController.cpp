@@ -19,6 +19,8 @@ void AShooterAntPlayerController::BeginPlay()
 		// spawn the mobile controls widget
 		MobileControlsWidget = CreateWidget<UUserWidget>(this, MobileControlsWidgetClass);
 
+		
+
 		if (MobileControlsWidget)
 		{
 			// add the controls to the player screen
@@ -30,6 +32,12 @@ void AShooterAntPlayerController::BeginPlay()
 
 		}
 
+	}
+
+	HUDWidget = CreateWidget<UHUDWidget>(this, HUDWidgetClass);
+	if (HUDWidget)
+	{
+		HUDWidget->AddToViewport();
 	}
 }
 
