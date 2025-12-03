@@ -185,6 +185,7 @@ void AShooterAntCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, con
 		{
 			isAlive = false;
 			Health = 0.f;
+			GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		}
 		UE_LOG(LogShooterAnt, Warning, TEXT("Current Health: %f"), Health);
 	}
