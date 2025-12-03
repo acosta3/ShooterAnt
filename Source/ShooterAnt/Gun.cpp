@@ -17,6 +17,10 @@ AGun::AGun()
 	SkeletalComp->SetupAttachment(RootComponent);
 
 
+	MuzzleFlashParticleSystem = CreateDefaultSubobject<UNiagaraComponent>(TEXT("Muzzle Flash"));
+	MuzzleFlashParticleSystem->SetupAttachment(SkeletalComp);
+
+
 
 
 }
@@ -26,6 +30,7 @@ void AGun::BeginPlay()
 {
 	Super::BeginPlay();
 
+	MuzzleFlashParticleSystem->Deactivate();
 	
 	
 	
@@ -40,6 +45,7 @@ void AGun::Tick(float DeltaTime)
 
 void AGun::PullTrigger()
 {
+	MuzzleFlashParticleSystem->Activate(true);
 	if (OwnerController)
 
 	{
