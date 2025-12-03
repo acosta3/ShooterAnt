@@ -56,12 +56,16 @@ void AShooterAntCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	GetMesh()->HideBoneByName("weapon_r", EPhysBodyOp::PBO_None);
+
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
 
 	if (Gun)
 	{
 		// Setting the projectiles owner to the pawn that fired it
 		Gun->SetOwner(this);
+		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform,TEXT("WeaponSocket"));
+
 	}
 
 
