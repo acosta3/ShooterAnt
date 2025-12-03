@@ -50,6 +50,24 @@ AShooterAntCharacter::AShooterAntCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
 
+
+// Called when the game starts or when spawned
+void AShooterAntCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
+
+	if (Gun)
+	{
+		// Setting the projectiles owner to the pawn that fired it
+		Gun->SetOwner(this);
+	}
+
+
+}
+
+
 void AShooterAntCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	// Set up action bindings
@@ -137,6 +155,6 @@ void AShooterAntCharacter::DoJumpEnd()
 
 void AShooterAntCharacter::Shoot()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Pew Pew!"));
+	if (Gun) Gun->PullTrigger();
 
 }

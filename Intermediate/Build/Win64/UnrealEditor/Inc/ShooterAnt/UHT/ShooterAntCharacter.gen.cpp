@@ -12,10 +12,12 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeShooterAntCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
+SHOOTERANT_API UClass* Z_Construct_UClass_AGun_NoRegister();
 SHOOTERANT_API UClass* Z_Construct_UClass_AShooterAntCharacter();
 SHOOTERANT_API UClass* Z_Construct_UClass_AShooterAntCharacter_NoRegister();
 UPackage* Z_Construct_UPackage__Script_ShooterAnt();
@@ -330,6 +332,10 @@ struct Z_Construct_UClass_AShooterAntCharacter_Statics
 		{ "ToolTip", "Shoot Input Action" },
 #endif
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GunClass_MetaData[] = {
+		{ "Category", "ShooterAntCharacter" },
+		{ "ModuleRelativePath", "ShooterAntCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -338,6 +344,7 @@ struct Z_Construct_UClass_AShooterAntCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MouseLookAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ShootAction;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_GunClass;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -359,6 +366,7 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterAntCha
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterAntCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LookAction_MetaData), NewProp_LookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_MouseLookAction = { "MouseLookAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterAntCharacter, MouseLookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MouseLookAction_MetaData), NewProp_MouseLookAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_ShootAction = { "ShootAction", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterAntCharacter, ShootAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ShootAction_MetaData), NewProp_ShootAction_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_GunClass = { "GunClass", nullptr, (EPropertyFlags)0x0014000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AShooterAntCharacter, GunClass), Z_Construct_UClass_UClass, Z_Construct_UClass_AGun_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GunClass_MetaData), NewProp_GunClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooterAntCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_CameraBoom,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_FollowCamera,
@@ -367,6 +375,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AShooterA
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_LookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_MouseLookAction,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_ShootAction,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AShooterAntCharacter_Statics::NewProp_GunClass,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AShooterAntCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AShooterAntCharacter_Statics::DependentSingletons[])() = {
@@ -405,10 +414,10 @@ AShooterAntCharacter::~AShooterAntCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShooterAntCharacter, AShooterAntCharacter::StaticClass, TEXT("AShooterAntCharacter"), &Z_Registration_Info_UClass_AShooterAntCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterAntCharacter), 2310001010U) },
+		{ Z_Construct_UClass_AShooterAntCharacter, AShooterAntCharacter::StaticClass, TEXT("AShooterAntCharacter"), &Z_Registration_Info_UClass_AShooterAntCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterAntCharacter), 2323832650U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_4069050883(TEXT("/Script/ShooterAnt"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_1245197999(TEXT("/Script/ShooterAnt"),
 	Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
