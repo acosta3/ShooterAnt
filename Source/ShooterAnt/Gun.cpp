@@ -3,6 +3,8 @@
 
 #include "Gun.h"
 
+#include "Kismet/GameplayStatics.h"
+
 // Sets default values
 AGun::AGun()
 {
@@ -86,6 +88,18 @@ void AGun::PullTrigger()
 				FColor::Red,
 				true
 			);
+
+			AActor* HitActor = HitResult.GetActor();
+			if(HitActor)
+			{
+				UGameplayStatics::ApplyDamage(
+					HitActor,
+					BulletDamage,
+					OwnerController,
+					this,
+					UDamageType::StaticClass()
+				);
+			}
 		}
 
 		

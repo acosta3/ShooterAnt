@@ -13,8 +13,11 @@ void EmptyLinkFunctionForGeneratedCodeShooterAntCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_UDamageType_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 SHOOTERANT_API UClass* Z_Construct_UClass_AGun_NoRegister();
@@ -203,6 +206,71 @@ DEFINE_FUNCTION(AShooterAntCharacter::execDoMove)
 }
 // ********** End Class AShooterAntCharacter Function DoMove ***************************************
 
+// ********** Begin Class AShooterAntCharacter Function OnDamageTaken ******************************
+struct Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics
+{
+	struct ShooterAntCharacter_eventOnDamageTaken_Parms
+	{
+		AActor* DamagedActor;
+		float Damage;
+		const UDamageType* DamageType;
+		AController* InstigatedBy;
+		AActor* DamageCauser;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "ShooterAntCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DamageType_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamagedActor;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_Damage;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamageType;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_InstigatedBy;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamageCauser;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_DamagedActor = { "DamagedActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterAntCharacter_eventOnDamageTaken_Parms, DamagedActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_Damage = { "Damage", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterAntCharacter_eventOnDamageTaken_Parms, Damage), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_DamageType = { "DamageType", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterAntCharacter_eventOnDamageTaken_Parms, DamageType), Z_Construct_UClass_UDamageType_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DamageType_MetaData), NewProp_DamageType_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_InstigatedBy = { "InstigatedBy", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterAntCharacter_eventOnDamageTaken_Parms, InstigatedBy), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_DamageCauser = { "DamageCauser", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ShooterAntCharacter_eventOnDamageTaken_Parms, DamageCauser), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_DamagedActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_Damage,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_DamageType,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_InstigatedBy,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::NewProp_DamageCauser,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AShooterAntCharacter, nullptr, "OnDamageTaken", Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::PropPointers), sizeof(Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::ShooterAntCharacter_eventOnDamageTaken_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::Function_MetaDataParams), Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::ShooterAntCharacter_eventOnDamageTaken_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AShooterAntCharacter::execOnDamageTaken)
+{
+	P_GET_OBJECT(AActor,Z_Param_DamagedActor);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_Damage);
+	P_GET_OBJECT(UDamageType,Z_Param_DamageType);
+	P_GET_OBJECT(AController,Z_Param_InstigatedBy);
+	P_GET_OBJECT(AActor,Z_Param_DamageCauser);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnDamageTaken(Z_Param_DamagedActor,Z_Param_Damage,Z_Param_DamageType,Z_Param_InstigatedBy,Z_Param_DamageCauser);
+	P_NATIVE_END;
+}
+// ********** End Class AShooterAntCharacter Function OnDamageTaken ********************************
+
 // ********** Begin Class AShooterAntCharacter *****************************************************
 void AShooterAntCharacter::StaticRegisterNativesAShooterAntCharacter()
 {
@@ -212,6 +280,7 @@ void AShooterAntCharacter::StaticRegisterNativesAShooterAntCharacter()
 		{ "DoJumpStart", &AShooterAntCharacter::execDoJumpStart },
 		{ "DoLook", &AShooterAntCharacter::execDoLook },
 		{ "DoMove", &AShooterAntCharacter::execDoMove },
+		{ "OnDamageTaken", &AShooterAntCharacter::execOnDamageTaken },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -352,6 +421,7 @@ struct Z_Construct_UClass_AShooterAntCharacter_Statics
 		{ &Z_Construct_UFunction_AShooterAntCharacter_DoJumpStart, "DoJumpStart" }, // 2766097985
 		{ &Z_Construct_UFunction_AShooterAntCharacter_DoLook, "DoLook" }, // 32846091
 		{ &Z_Construct_UFunction_AShooterAntCharacter_DoMove, "DoMove" }, // 1173380439
+		{ &Z_Construct_UFunction_AShooterAntCharacter_OnDamageTaken, "OnDamageTaken" }, // 2827251642
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -414,10 +484,10 @@ AShooterAntCharacter::~AShooterAntCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AShooterAntCharacter, AShooterAntCharacter::StaticClass, TEXT("AShooterAntCharacter"), &Z_Registration_Info_UClass_AShooterAntCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterAntCharacter), 2323832650U) },
+		{ Z_Construct_UClass_AShooterAntCharacter, AShooterAntCharacter::StaticClass, TEXT("AShooterAntCharacter"), &Z_Registration_Info_UClass_AShooterAntCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AShooterAntCharacter), 735857897U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_1245197999(TEXT("/Script/ShooterAnt"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_2336245118(TEXT("/Script/ShooterAnt"),
 	Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h__Script_ShooterAnt_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

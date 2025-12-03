@@ -46,7 +46,8 @@ public:
 	UNiagaraSystem* ImpactParticleSystem;
 
 
-
+	UPROPERTY(EditAnywhere)
+	float BulletDamage = 10.f;
 
 	
 

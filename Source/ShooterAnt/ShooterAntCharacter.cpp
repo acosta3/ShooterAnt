@@ -56,6 +56,8 @@ void AShooterAntCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	OnTakeAnyDamage.AddDynamic(this, &AShooterAntCharacter::OnDamageTaken);
+
 	GetMesh()->HideBoneByName("weapon_r", EPhysBodyOp::PBO_None);
 
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
@@ -165,4 +167,9 @@ void AShooterAntCharacter::Shoot()
 {
 	if (Gun) Gun->PullTrigger();
 
+}
+
+void AShooterAntCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, const UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser)
+{
+	UE_LOG(LogShooterAnt, Warning, TEXT("Health Deducted: %f"), Damage);
 }

@@ -16,8 +16,13 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class AController;
+class UDamageType;
+
 // ********** Begin Class AShooterAntCharacter *****************************************************
 #define FID_Users_antho_Desktop_Unreal_Engine_Projects_ShooterAnt_Source_ShooterAnt_ShooterAntCharacter_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnDamageTaken); \
 	DECLARE_FUNCTION(execDoJumpEnd); \
 	DECLARE_FUNCTION(execDoJumpStart); \
 	DECLARE_FUNCTION(execDoLook); \
