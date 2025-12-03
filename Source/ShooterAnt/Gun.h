@@ -43,7 +43,7 @@ public:
 	UNiagaraComponent* MuzzleFlashParticleSystem;
 
 	UPROPERTY(EditAnywhere)
-	UNiagaraSystem* ImpactPArticleSystem;
+	UNiagaraSystem* ImpactParticleSystem;
 
 
 

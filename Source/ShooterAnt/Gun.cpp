@@ -72,6 +72,12 @@ void AGun::PullTrigger()
 
 		if(isHit)
 		{
+			UNiagaraFunctionLibrary::SpawnSystemAtLocation(
+				GetWorld(),
+				ImpactParticleSystem,
+				HitResult.ImpactPoint,
+				HitResult.ImpactNormal.Rotation()
+			);
 			DrawDebugSphere(
 				GetWorld(),
 				HitResult.ImpactPoint,
