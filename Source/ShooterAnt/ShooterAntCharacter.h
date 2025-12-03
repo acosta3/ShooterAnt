@@ -108,7 +108,7 @@ public:
 	UPROPERTY(EditAnywhere)
 	TSubclassOf <AGun> GunClass;
 
-
+	
 
 	AGun* Gun;
 

@@ -31,4 +31,6 @@ public:
 	UPROPERTY(VisibleAnywhere);
 	USceneComponent* SkeletalComp;
 
+	AController* OwnerController;
+
 };

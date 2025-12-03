@@ -25,6 +25,8 @@ AGun::AGun()
 void AGun::BeginPlay()
 {
 	Super::BeginPlay();
+
+	
 	
 	
 }
@@ -38,6 +40,14 @@ void AGun::Tick(float DeltaTime)
 
 void AGun::PullTrigger()
 {
-	UE_LOG(LogTemp, Display, TEXT("Pew pew!"));
+	if (OwnerController)
+
+	{
+		FRotator ViewPointRotation;
+		FVector ViewPointLocation;
+		OwnerController->GetPlayerViewPoint(ViewPointLocation, ViewPointRotation);
+
+		DrawDebugCamera(GetWorld(), ViewPointLocation, ViewPointRotation, 90.f, 2.f, FColor::Red, true);
+	}
 }
 
