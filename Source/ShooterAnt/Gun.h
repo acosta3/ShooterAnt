@@ -31,6 +31,11 @@ public:
 	UPROPERTY(VisibleAnywhere);
 	USceneComponent* SkeletalComp;
 
+	UPROPERTY(EditAnywhere);
+	float MaxRange = 10000.f;
+
+	
+
 	AController* OwnerController;
 
 };
