@@ -63,8 +63,9 @@ void AShooterAI::StartBehaviorTree(AShooterAntCharacter* Player)
 		RunBehaviorTree(EnemyAIBehaviorTree);
 
 		UBlackboardComponent* MyBlackBoard = GetBlackboardComponent();
-		if (MyBlackBoard && PlayerCharacter)
+		if (MyBlackBoard && PlayerCharacter && MyCharacter)
 		{
+			MyBlackBoard->SetValueAsVector("StartLocation", MyCharacter->GetActorLocation());
 			MyBlackBoard->SetValueAsVector("PlayerLocation", PlayerCharacter->GetActorLocation());
 		}
 	}
