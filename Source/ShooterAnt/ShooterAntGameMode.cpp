@@ -19,4 +19,16 @@ void AShooterAntGameMode::BeginPlay()
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AShooterAI::StaticClass(), ShooterAIActors);
 
 
+	for (int32 LoopIndex = 0; LoopIndex < ShooterAIActors.Num(); LoopIndex++) 
+	{
+		AActor* ShooterAIActor = ShooterAIActors[LoopIndex];
+		AShooterAI* ShooterAI = Cast<AShooterAI>(ShooterAIActor);
+
+		if (ShooterAI)
+		{
+			ShooterAI->StartBehaviorTree(Player);
+		}
+	}
+
+
 }

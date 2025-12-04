@@ -10,7 +10,7 @@ void AShooterAI::BeginPlay()
 
 	// says at the world find for player pawn(0) which is the player we play
 	// remeber that getPawn returns to the AI character itself 
-	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	//PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 
 	
 
