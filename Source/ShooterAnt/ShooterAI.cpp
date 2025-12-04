@@ -9,10 +9,22 @@ void AShooterAI::BeginPlay()
 
 	// says at the world find for player pawn(0) which is the player we play
 	// remeber that getPawn returns to the AI character itself 
-	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+
+	
+}
+
+void AShooterAI::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
 
 	if (PlayerPawn)
 	{
 		SetFocus(PlayerPawn);
+
+		// have to set up navigation mesh first
+		MoveToActor(PlayerPawn, 200.0f);
 	}
+
 }
