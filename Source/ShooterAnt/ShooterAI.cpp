@@ -12,6 +12,11 @@ void AShooterAI::BeginPlay()
 	// remeber that getPawn returns to the AI character itself 
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 
+	if (EnemyAIBehaviorTree) 
+	{
+		RunBehaviorTree(EnemyAIBehaviorTree);
+	}
+
 	
 }
 
@@ -19,7 +24,7 @@ void AShooterAI::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-
+	/*
 	if (PlayerPawn)
 	{
 		//SetFocus(PlayerPawn);
@@ -40,6 +45,7 @@ void AShooterAI::Tick(float DeltaTime)
 		
 		
 	}
+	*/
 
 }
 

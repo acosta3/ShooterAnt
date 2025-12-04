@@ -26,6 +26,11 @@ public:
 
 	APawn* PlayerPawn;
 
+	UPROPERTY(EditAnywhere)
+	UBehaviorTree* EnemyAIBehaviorTree;
+
+
+
 
 	
 
