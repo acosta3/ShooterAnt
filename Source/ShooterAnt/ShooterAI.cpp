@@ -21,10 +21,20 @@ void AShooterAI::Tick(float DeltaTime)
 
 	if (PlayerPawn)
 	{
-		SetFocus(PlayerPawn);
+		//SetFocus(PlayerPawn);
 
 		// have to set up navigation mesh first
-		MoveToActor(PlayerPawn, 200.0f);
+
+		if (LineOfSightTo(PlayerPawn)) 
+		{
+			MoveToActor(PlayerPawn, 200.0f);
+
+		}
+
+		
+		
 	}
 
 }
+
+ 
