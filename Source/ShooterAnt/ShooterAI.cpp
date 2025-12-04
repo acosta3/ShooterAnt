@@ -12,10 +12,7 @@ void AShooterAI::BeginPlay()
 	// remeber that getPawn returns to the AI character itself 
 	PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 
-	if (EnemyAIBehaviorTree) 
-	{
-		RunBehaviorTree(EnemyAIBehaviorTree);
-	}
+	
 
 	
 }
@@ -47,6 +44,22 @@ void AShooterAI::Tick(float DeltaTime)
 	}
 	*/
 
+}
+
+void AShooterAI::StartBehaviorTree(AShooterAntCharacter* Player)
+{
+
+	if (EnemyAIBehaviorTree)
+	{
+		// refers to the AI charactere
+		MyCharacter = Cast<AShooterAntCharacter>(GetPawn());
+		if (Player) 
+		{
+			//setting the player 
+			PlayerCharacter = Player;
+		}
+		RunBehaviorTree(EnemyAIBehaviorTree);
+	}
 }
 
  

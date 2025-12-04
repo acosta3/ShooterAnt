@@ -18,6 +18,10 @@ public:
 	
 	/** Constructor */
 	AShooterAntGameMode();
+
+protected:
+	virtual void BeginPlay() override;
+
 };
 
 

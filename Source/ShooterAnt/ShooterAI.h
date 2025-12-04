@@ -29,6 +29,11 @@ public:
 	UPROPERTY(EditAnywhere)
 	UBehaviorTree* EnemyAIBehaviorTree;
 
+	AShooterAntCharacter* PlayerCharacter;
+	AShooterAntCharacter* MyCharacter;
+
+	void StartBehaviorTree(AShooterAntCharacter * Player);
+
 
 
 
