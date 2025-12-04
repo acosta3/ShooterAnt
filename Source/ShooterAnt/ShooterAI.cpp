@@ -30,6 +30,11 @@ void AShooterAI::Tick(float DeltaTime)
 			MoveToActor(PlayerPawn, 200.0f);
 
 		}
+		else
+		{
+			ClearFocus(EAIFocusPriority::Gameplay);
+			StopMovement();
+		}
 
 		
 		
