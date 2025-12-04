@@ -47,6 +47,12 @@
     <ClInclude Include="..\..\Source\ShooterAnt\HUDWidget.h">
       <Filter>Source\ShooterAnt</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\ShooterAI.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\ShooterAI.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
     <None Include="..\..\Source\ShooterAnt\ShooterAnt.Build.cs">
       <Filter>Source\ShooterAnt</Filter>
     </None>
