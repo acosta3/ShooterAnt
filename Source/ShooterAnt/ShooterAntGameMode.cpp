@@ -27,6 +27,7 @@ void AShooterAntGameMode::BeginPlay()
 		if (ShooterAI)
 		{
 			ShooterAI->StartBehaviorTree(Player);
+			UE_LOG(LogTemp, Display, TEXT("%s Starting behaviortree"), *ShooterAI->GetActorNameOrLabel());
 		}
 	}
 
