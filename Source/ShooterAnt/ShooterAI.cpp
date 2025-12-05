@@ -38,7 +38,7 @@ void AShooterAI::Tick(float DeltaTime)
 		else
 		{
 			ClearFocus(EAIFocusPriority::Gameplay);
-			StopMovement();
+			StopMovement(); 
 		}
 
 		
@@ -66,7 +66,7 @@ void AShooterAI::StartBehaviorTree(AShooterAntCharacter* Player)
 		if (MyBlackBoard && PlayerCharacter && MyCharacter)
 		{
 			MyBlackBoard->SetValueAsVector("StartLocation", MyCharacter->GetActorLocation());
-			MyBlackBoard->SetValueAsVector("PlayerLocation", PlayerCharacter->GetActorLocation());
+			//MyBlackBoard->SetValueAsVector("PlayerLocation", PlayerCharacter->GetActorLocation());
 		}
 	}
 }

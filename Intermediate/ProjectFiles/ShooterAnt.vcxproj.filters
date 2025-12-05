@@ -35,6 +35,18 @@
     <Filter Include="Source\ShooterAnt">
       <UniqueIdentifier>{92AF276A-2D59-3AC3-9632-D17B8818E504}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ShooterAnt\BTService_PlayerLocationIfSeen.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\BTService_PlayerLocationIfSeen.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\BTService_PlayerLoccationIfSeen.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\BTService_PlayerLoccationIfSeen.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\ShooterAnt\Gun.cpp">
       <Filter>Source\ShooterAnt</Filter>
     </ClCompile>
