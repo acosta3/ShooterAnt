@@ -260,14 +260,18 @@
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
     <None Include="..\..\Config\DefaultInput.ini"/>
+    <ClCompile Include="..\..\Source\ShooterAnt\BTService_PlayerLocation.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\BTService_PlayerLocation.h"/>
     <ClCompile Include="..\..\Source\ShooterAnt\BTService_PlayerLocationIfSeen.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\ShooterAnt\BTService_PlayerLocationIfSeen.h"/>
-    <ClCompile Include="..\..\Source\ShooterAnt\BTService_PlayerLoccationIfSeen.cpp">
+    <ClCompile Include="..\..\Source\ShooterAnt\BTTask_ClearBlackboardValue.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
-    <ClInclude Include="..\..\Source\ShooterAnt\BTService_PlayerLoccationIfSeen.h"/>
+    <ClInclude Include="..\..\Source\ShooterAnt\BTTask_ClearBlackboardValue.h"/>
     <ClCompile Include="..\..\Source\ShooterAnt\Gun.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
