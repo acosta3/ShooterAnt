@@ -47,6 +47,12 @@
     <ClInclude Include="..\..\Source\ShooterAnt\BTService_PlayerLocationIfSeen.h">
       <Filter>Source\ShooterAnt</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\ShooterAnt\BTTaskNode_ShootAtPlayer.cpp">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\BTTaskNode_ShootAtPlayer.h">
+      <Filter>Source\ShooterAnt</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\ShooterAnt\BTTask_ClearBlackboardValue.cpp">
       <Filter>Source\ShooterAnt</Filter>
     </ClCompile>

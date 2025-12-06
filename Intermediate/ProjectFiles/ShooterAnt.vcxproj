@@ -268,6 +268,10 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\ShooterAnt\BTService_PlayerLocationIfSeen.h"/>
+    <ClCompile Include="..\..\Source\ShooterAnt\BTTaskNode_ShootAtPlayer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ShooterAnt\BTTaskNode_ShootAtPlayer.h"/>
     <ClCompile Include="..\..\Source\ShooterAnt\BTTask_ClearBlackboardValue.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

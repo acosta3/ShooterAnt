@@ -21,13 +21,13 @@ void EmptyLinkFunctionForGeneratedCodeShooterAnt_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xBD00EE2F,
-				0x3E353582,
+				0x0DC19AFA,
+				0x327654DC,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_ShooterAnt.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_ShooterAnt.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_ShooterAnt(Z_Construct_UPackage__Script_ShooterAnt, TEXT("/Script/ShooterAnt"), Z_Registration_Info_UPackage__Script_ShooterAnt, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xBD00EE2F, 0x3E353582));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_ShooterAnt(Z_Construct_UPackage__Script_ShooterAnt, TEXT("/Script/ShooterAnt"), Z_Registration_Info_UPackage__Script_ShooterAnt, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x0DC19AFA, 0x327654DC));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
