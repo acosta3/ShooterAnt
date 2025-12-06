@@ -12,6 +12,8 @@
 #include "InputActionValue.h"
 #include "ShooterAnt.h"
 
+#include "ShooterAntPlayerController.h"
+
 AShooterAntCharacter::AShooterAntCharacter()
 {
 	// Set size for collision capsule
@@ -61,9 +63,12 @@ void AShooterAntCharacter::BeginPlay()
 	// Health
 	Health = MaxHealth;
 
+	UpdateHud();
+
 	GetMesh()->HideBoneByName("weapon_r", EPhysBodyOp::PBO_None);
 
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
+
 
 	if (Gun)
 	{
@@ -181,15 +186,33 @@ void AShooterAntCharacter::OnDamageTaken(AActor* DamagedActor, float Damage, con
 	{
 		UE_LOG(LogShooterAnt, Warning, TEXT("Health Deducted: %f"), Damage);
 		Health -= Damage;
+		UpdateHud();
 		if (Health <= 0.f)
 		{
 			isAlive = false;
 			Health = 0.f;
+			
 			GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 			DetachFromControllerPendingDestroy();
 		}
 		UE_LOG(LogShooterAnt, Warning, TEXT("Current Health: %f"), Health);
+		
 	}
 	
 	
+}
+
+void AShooterAntCharacter::UpdateHud()
+{
+	AShooterAntPlayerController* PlayerController = Cast<AShooterAntPlayerController>(GetController());
+	float HealthPercent = Health / MaxHealth;
+
+	if (HealthPercent < 0.0f) 
+	{
+		HealthPercent = 0.0f;
+	}
+	if (PlayerController)
+	{
+		PlayerController->HUDWidget->SetHealthBarPercent(HealthPercent);
+	}
 }

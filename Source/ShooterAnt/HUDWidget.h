@@ -16,5 +16,10 @@ class SHOOTERANT_API UHUDWidget : public UUserWidget
 	GENERATED_BODY()
 
 public:
-	
+	UPROPERTY(EditAnywhere, meta = (BindWidget))
+	UProgressBar* HealthBar; // same name as the connection in the widget class
+
+
+	void SetHealthBarPercent(float NewPercent);
+
 };
