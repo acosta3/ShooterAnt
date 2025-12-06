@@ -48,6 +48,7 @@ void AGun::Tick(float DeltaTime)
 void AGun::PullTrigger()
 {
 	MuzzleFlashParticleSystem->Activate(true);
+	UGameplayStatics::PlaySoundAtLocation(GetWorld(), ShootSound, GetActorLocation());
 	if (OwnerController)
 
 	{
@@ -80,14 +81,15 @@ void AGun::PullTrigger()
 				HitResult.ImpactPoint,
 				HitResult.ImpactNormal.Rotation()
 			);
-			DrawDebugSphere(
+			UGameplayStatics::PlaySoundAtLocation(GetWorld(), ImpactSound, HitResult.ImpactPoint);
+			/*DrawDebugSphere(
 				GetWorld(),
 				HitResult.ImpactPoint,
 				5.0f,
 				16,
 				FColor::Red,
 				true
-			);
+			);*/
 
 			AActor* HitActor = HitResult.GetActor();
 			if(HitActor)
